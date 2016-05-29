@@ -6,8 +6,11 @@ gem 'rails', '4.0.2'
 gem 'pg', '0.15.1'
 
 group :development, :test do
-  gem 'rspec-rails', '3.4.0'
-  gem 'guard-rspec', '4.3.0'
+  gem 'rspec-rails', '3.3.0'
+  gem 'guard-rspec', require: false
+  gem 'guard-bundler', require: false
+  gem 'spring'
+  gem 'spring-commands-rspec'
 end
 
 group :test do
