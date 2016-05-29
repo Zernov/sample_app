@@ -1,17 +1,19 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
-#ruby-gemset=railstutorial_rails_4_0
+ruby '2.2.5'
+#ruby-gemset=railstutorial_rails_4_0_beta
 
 gem 'rails', '4.0.2'
 gem 'pg', '0.15.1'
 
 group :development, :test do
   gem 'rspec-rails', '3.4.0'
+  gem 'guard-rspec', '4.3.0'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.2.0'
+  gem 'libnotify', '0.8.0'
 end
 
 gem 'sass-rails', '4.0.1'
