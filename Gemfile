@@ -3,6 +3,8 @@ ruby '2.2.5'
 #ruby-gemset=railstutorial_rails_4_0_beta
 
 gem 'rails', '4.0.2'
+gem "sass-rails", "~> 4.0.2"
+gem 'bootstrap-sass'
 gem 'pg', '0.15.1'
 
 group :development, :test do
@@ -19,7 +21,7 @@ group :test do
   gem 'libnotify', '0.8.0'
 end
 
-gem 'sass-rails', '4.0.1'
+#gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.0.4'
