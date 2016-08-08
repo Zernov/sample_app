@@ -6,9 +6,11 @@ gem 'rails', '4.0.2'
 gem "sass-rails", "~> 4.0.2"
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'pg', '0.15.1'
+gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
-  gem 'rspec-rails', '3.3.0'
+  gem 'rspec-rails', '>= 3.3.0'
+  gem 'rspec-core', '>= 3.4.0'
   gem 'guard-rspec', require: false
   gem 'guard-bundler', require: false
   gem 'spring'
