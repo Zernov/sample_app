@@ -116,6 +116,17 @@ describe "Authentication" do
       end
     end
 
+    describe "as admin user" do
+      let(:admin) { FactoryGirl.create(:admin) }
+      before { sign_in admin, no_capybara: true }
+
+      it "should not be able to delete themselves via #destroy action" do
+        expect do
+          delete user_path(admin)
+        end.to change(User, :count).by(0)
+      end
+    end
+
     describe "as signed-in user" do
       let(:user) { FactoryGirl.create(:user) }
       before { sign_in user, no_capybara:true }
